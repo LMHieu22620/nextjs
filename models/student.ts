@@ -1,7 +1,6 @@
-import * as React from 'react';
-
-export interface StudentProps {}
-
-export default function Student(props: StudentProps) {
-  return <div>Student</div>;
+export interface student {
+  id: string | number;
+  title: string;
+  chooseList: any;
+  price: string;
 }
