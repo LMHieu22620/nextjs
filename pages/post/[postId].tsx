@@ -34,7 +34,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<PostPageProps> = async (context: GetStaticPropsContext) => {
 
     console.log('\nGET STATIC PATHS', context.params?.postId);
-
+    // console.log("context", context)
     const postId = context.params?.postId
 
     if (!postId) return { notFound: true }

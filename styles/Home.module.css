@@ -114,3 +114,12 @@
     flex-direction: column;
   }
 }
+.btn-choose:hover {
+  background-color: #f53838;
+  color: white;
+  box-shadow: 0px 10px 33px -8px #f53838;
+}
+.choose-plan:hover {
+  border: 2px solid #f53838;
+  transition: all 0.2s ease;
+}
