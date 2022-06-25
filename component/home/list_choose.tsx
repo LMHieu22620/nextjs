@@ -7,7 +7,7 @@ export interface ListChooseProps {
     item: ListPlan
 }
 
-export default function ListChoose({ item }: ListChooseProps) {
+export function ListChoose({ item }: ListChooseProps) {
     return (
         <Card sx={{ maxWidth: 345 }} className='choose-plan'>
             <CardActionArea className='choose-card' sx={{ position: 'unset', cursor: 'auto' }} >

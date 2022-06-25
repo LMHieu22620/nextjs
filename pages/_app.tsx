@@ -5,6 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import { AppPropsWithLayout } from '../models';
 import '../styles/index.css';
+import "swiper/css/bundle";
 // import '../component/common/styles/index.css'
 
 // Client-side cache, shared for the whole session of the user in the browser.

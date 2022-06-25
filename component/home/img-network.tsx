@@ -2,12 +2,12 @@ import { Box, Container, Typography } from '@mui/material';
 import * as React from 'react';
 import Image from 'next/image';
 import HugeGlobal from '@/images/HugeGlobal.png'
-
+import Sponsored from '@/images/Sponsored.png'
 
 export interface NetWorkImgProps {
 }
 
-export default function NetWorkImg(props: NetWorkImgProps) {
+export function NetWorkImg(props: NetWorkImgProps) {
     return (
         <Container >
             <Box pt={10} >
@@ -31,6 +31,13 @@ export default function NetWorkImg(props: NetWorkImgProps) {
                 justifyContent: 'center'
             }} >
                 <Image src={HugeGlobal} />
+            </Box>
+            <Box sx={{
+                marginBottom: '50px',
+                display: 'flex',
+                justifyContent: 'center'
+            }} >
+                <Image src={Sponsored} />
             </Box>
         </Container >
     );

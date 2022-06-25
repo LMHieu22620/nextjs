@@ -4,16 +4,47 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { ROUTER_LIST } from './router';
 import clsx from 'clsx';
+import { useEffect, useRef, useState } from 'react';
+import { ClassNames } from '@emotion/react';
 
 export interface HeaderDesktopProps {
 }
 
 export function HeaderDesktop(props: HeaderDesktopProps) {
     const router = useRouter();
+    const headerRef = useRef<HTMLDivElement>(null);
+    const menuRef = useRef(null);
+    const topRef = useRef(null);
 
+
+    const [classs, setClass] = useState<string>('');
+
+    useEffect(() => {
+
+        const onScroll = () => {
+            if (headerRef.current) {
+                if (
+                    document.body.scrollTop > 50 ||
+                    document.documentElement.scrollTop > 50
+                ) {
+
+                    headerRef.current.classList.add("shrink");
+                } else {
+
+                    headerRef.current.classList.remove("shrink");
+                }
+            }
+        }
+        window.addEventListener("scroll", () => onScroll());
+
+        return () => {
+            window.removeEventListener("scroll", () => onScroll());
+        };
+
+    }, []);
     return (
-        <Box display={{ xs: 'none', md: 'block' }} >
-            <Container sx={{ height: 100, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Box display={{ xs: 'none', md: 'block' }} ref={headerRef} className='header-ctn' >
+            <Container >
                 <Stack direction='row' justifyContent='space-between' display='flex' alignItems='center' sx={{ width: '100%' }} >
                     <Box sx={{ cursor: 'pointer', display: 'flex' }} >
                         <Link href='/'><img src="/image/Logo.png" alt="" /></Link>

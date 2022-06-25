@@ -2,11 +2,11 @@ import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia,
 import { Container } from '@mui/system';
 import * as React from 'react';
 import { ListPlan } from '@/models/post';
-import ListChoose from './list_choose';
+import { ListChoose } from './index';
 
 
 
-export default function ChooseYourPlan() {
+export function ChooseYourPlan() {
 
     const ListPlan: ListPlan[] = [
         {
@@ -39,7 +39,7 @@ export default function ChooseYourPlan() {
                     </Typography>
                     <Box pt={3}>
                         <Typography sx={{ color: '#4F5665' }} display='flex' justifyContent='center' alignItems='center' lineHeight='1.8'>
-                            Let's choose the package that is best for you and explore it happily and
+                            Let&apos;s choose the package that is best for you and explore it happily and
                         </Typography>
                         <Typography sx={{ color: '#4F5665' }} display='flex' justifyContent='center' alignItems='center' >  cheerfully.</Typography>
 

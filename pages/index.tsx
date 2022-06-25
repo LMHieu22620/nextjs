@@ -1,8 +1,4 @@
-import { HeroSection } from '@/component/home'
-import ChooseYourPlan from '@/component/home/choose-your-plan'
-import Introduct from '@/component/home/feature-introduct'
-import NetWorkImg from '@/component/home/img-network'
-import Infor from '@/component/home/information'
+import { HeroSection, ChooseYourPlan, Introduct, Infor, NetWorkImg, ListReview } from '@/component/home'
 import { MainLayout } from '@/component/layout'
 import { Box } from '@mui/material'
 import { NextPageWithLayout } from '../models'
@@ -16,6 +12,7 @@ const Home: NextPageWithLayout = () => {
       <Introduct />
       <ChooseYourPlan />
       <NetWorkImg />
+      <ListReview />
     </Box>
 
   )

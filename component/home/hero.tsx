@@ -5,7 +5,7 @@ import * as React from 'react';
 import Illustration from '@/images/Illustration.png'
 export function HeroSection() {
     return (
-        <Box pt={12} pb={6} >
+        <Box pt={23} pb={6} >
             <Container>
                 <Stack direction='row' >
                     <Box flex={1} >

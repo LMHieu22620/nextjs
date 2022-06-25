@@ -5,7 +5,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import AddLocationIcon from '@mui/icons-material/AddLocation';
 import FiveGIcon from '@mui/icons-material/FiveG';
 
-export default function Infor() {
+export function Infor() {
     return (
         <Box pt={4} pb={10}  >
             <Container>

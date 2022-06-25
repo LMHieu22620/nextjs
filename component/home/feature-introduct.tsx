@@ -6,7 +6,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Illustration2 from '@/images/Illustration2.png'
 
 
-export default function Introduct() {
+export function Introduct() {
     return (
         <Container>
             <Box pb={15} >
